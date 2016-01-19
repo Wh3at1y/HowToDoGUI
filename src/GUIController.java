@@ -10,6 +10,8 @@ public class GUIController extends JFrame
 	 * constructor.) Every variable that will be used in more than one method
 	 * needs to be declared here. Not initialized.
 	 */
+	
+	//visibility Object variableName
 	private SpringLayout baseLayout;
 	private JButton simpleButton;
 
@@ -21,6 +23,7 @@ public class GUIController extends JFrame
 	 */
 	public GUIController()
 	{
+		//variableName = new Object();
 		baseLayout = new SpringLayout();
 		simpleButton = new JButton("A Text for the Button");
 
@@ -34,7 +37,8 @@ public class GUIController extends JFrame
 	 * setDefaultCloseOperation : Closes the java process. [Highly Recommended]
 	 * setLayout : Sets the layout type into for the Panel. [Needed] 
 	 * setTitle : Sets the window bar title. [Highly Recommended] 
-	 * setSize : Sets the window size in pixels. [Needed] 
+	 * setSize : Sets the window size in pixels. [Needed]
+	 * setResizable : Decides if the user can resize the window frame. [Optional]
 	 * setVisible : Decides if the program is visible. [Needed] (Last line of code in that method)
 	 */
 	public void buildFrame()
@@ -42,7 +46,8 @@ public class GUIController extends JFrame
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLayout(baseLayout);
 		setTitle("Window Title");
-		setSize(400, 400);
+		setResizable(false);
+		setSize(250, 250);
 
 		// setVisible has to be the last line of this method.
 		setVisible(true);
