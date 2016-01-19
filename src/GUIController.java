@@ -1,4 +1,3 @@
-import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
@@ -63,7 +62,7 @@ public class GUIController extends JFrame
 	}
 
 	/**
-	 * Everything in here will be from the WindowBuilder code.
+	 * Everything in here will be from the WindowBuilder code. It will look like garbage.
 	 */
 	private void buildPlacements()
 	{
